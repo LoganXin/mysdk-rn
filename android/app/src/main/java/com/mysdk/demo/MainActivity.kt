@@ -1,4 +1,4 @@
-package com.mysdkdemo
+package com.mysdk.demo
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
