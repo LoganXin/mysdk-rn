@@ -19,8 +19,12 @@ target 'MySdkDemo' do
 
   use_react_native!(
     :path => config[:reactNativePath],
+    :fabric_enabled => true,
+    :hermes_enabled => true,
+    :new_arch_enabled => true,
     # An absolute path to your application root.
-    :app_path => "#{Pod::Config.instance.installation_root}/.."
+    :app_path => "#{Pod::Config.instance.installation_root}/..",
+    :path => '../node_modules/react-native'
   )
 
   post_install do |installer|

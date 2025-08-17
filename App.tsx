@@ -16,7 +16,7 @@ function App() {
       if (!NativeInitModule) {
         Alert.alert('错误', 'NativeInitModule 未加载');
         return;
-    }
+      }
       const result = await NativeInitModule.initialize();
       Alert.alert('初始化结果', result); // 弹出“初始化成功”
     } catch (e) {

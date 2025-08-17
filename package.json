@@ -2,6 +2,20 @@
   "name": "MySdkDemo",
   "version": "0.0.1",
   "private": true,
+  "codegenConfig": {
+    "name": "NativeInitModule",
+    "type": "modules",
+    "jsSrcsDir": "./js/src/specs",
+    "android": {
+      "javaPackageName": "com.mysdk.core"
+    },
+    "ios": {
+      "modulesProvider": {
+        "NativeInitModule": "NativeInitModuleImpl"
+      }
+    
+    }
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
